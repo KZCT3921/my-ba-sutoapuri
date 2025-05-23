@@ -1,0 +1,70 @@
+body {
+  background: linear-gradient(120deg, #fbbf24 0%, #fffbe7 100%);
+}
+
+h1 {
+  color: #22223b;
+  letter-spacing: 0.15em;
+  text-align: center;
+  margin-top: 2em;
+  margin-bottom: 1em;
+}
+
+#login-form {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(251,191,36,0.13);
+  padding: 2em 1.5em;
+  margin: 2.5em auto 1em auto;
+  max-width: 350px;
+}
+
+#login-form input {
+  border: 1.5px solid #fbbf24;
+  background: #fffbe7;
+  color: #22223b;
+  font-size: 1em;
+  margin-bottom: 1em;
+  padding: 0.8em;
+  border-radius: 8px;
+  transition: border 0.2s, background 0.2s;
+}
+
+#login-form input:focus {
+  border-color: #22223b;
+  background: #fffde4;
+}
+
+#login-form button {
+  background: #fbbf24;
+  color: #22223b;
+  font-weight: bold;
+  border-radius: 8px;
+  border: none;
+  padding: 0.8em;
+  font-size: 1em;
+  margin-top: 0.5em;
+  transition: background 0.2s, color 0.2s;
+  cursor: pointer;
+}
+
+#login-form button:hover {
+  background: #22223b;
+  color: #fff;
+}
+
+a[href="reset-password.html"] {
+  display: block;
+  text-align: center;
+  margin-top: 1em;
+  color: #fbbf24;
+  text-decoration: underline;
+  font-weight: bold;
+  font-size: 0.98em;
+}
+
+#login-message {
+  text-align: center;
+  color: #e53e3e;
+  margin-top: 1em;
+}

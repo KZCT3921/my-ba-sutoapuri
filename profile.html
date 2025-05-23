@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>プロフィール | Burst Limit Gym</title>
+  <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+  <div id="profile-header">
+    <img id="profile-icon" src="assets/default-icon.png" alt="アイコン" />
+  </div>
+  <h1>プロフィール</h1>
+  <form id="profile-form">
+    <input type="text" name="username" placeholder="ユーザー名">
+    <textarea name="bio" placeholder="自己紹介"></textarea>
+    <label>アイコン画像を選択
+      <input type="file" id="icon-input" accept="image/*">
+    </label>
+    <button type="submit">保存</button>
+  </form>
+  <script src="profile.js"></script>
+</body>
+</html>

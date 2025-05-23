@@ -1,0 +1,56 @@
+/* 例: /Users/Yuta/Desktop/バーストアプリ/burst-limit-gym-app/css/open-hours.css */
+/* 営業時間表示をおしゃれに */
+body {
+  /* グラデーション追加 */
+  background: linear-gradient(135deg, #4facfe, #00f2fe);
+  min-height: 100vh;
+}
+
+
+
+.open-hours-box {
+  background: linear-gradient(120deg, #e0e7ff 0%, #a3bffa 100%);
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(59,130,246,0.13);
+  padding: 2em 1.5em;
+  margin: 2.5em auto 1.5em auto;
+  max-width: 370px;
+  text-align: center;
+}
+
+.open-hours-title {
+  font-size: 1.3em;
+  font-weight: bold;
+  color: #3b82f6;
+  margin-bottom: 1em;
+  letter-spacing: 0.08em;
+}
+
+.open-hours-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.open-hours-list li {
+  font-size: 1.1em;
+  color: #22223b;
+  background: #fff;
+  border-radius: 8px;
+  margin-bottom: 0.7em;
+  padding: 0.7em 0.5em;
+  box-shadow: 0 2px 8px rgba(163,191,250,0.08);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.open-hours-day {
+  font-weight: bold;
+  color: #3b82f6;
+}
+
+.open-hours-time {
+  font-family: 'Menlo', 'Consolas', monospace;
+  color: #22223b;
+}

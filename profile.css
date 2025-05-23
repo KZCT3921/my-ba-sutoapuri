@@ -1,0 +1,77 @@
+body {
+  background: linear-gradient(120deg, #f7fafc 0%, #a3bffa 100%);
+}
+
+#profile-header {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+#profile-icon {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #a3bffa;
+  background: #fff;
+}
+
+h1 {
+  color: #22223b;
+  letter-spacing: 0.13em;
+  text-align: center;
+  margin-top: 2em;
+  margin-bottom: 1em;
+}
+
+#profile-form {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(163,191,250,0.13);
+  padding: 2em 1.5em;
+  margin: 2.5em auto 1em auto;
+  max-width: 370px;
+}
+
+#profile-form input[type="text"],
+#profile-form input[type="email"],
+#profile-form textarea {
+  border: 1.5px solid #a3bffa;
+  background: #f7fafc;
+  color: #22223b;
+  font-size: 1em;
+  margin-bottom: 1em;
+  padding: 0.8em;
+  border-radius: 8px;
+  transition: border 0.2s, background 0.2s;
+}
+
+#profile-form textarea {
+  min-height: 70px;
+  resize: vertical;
+}
+
+#profile-form input:focus,
+#profile-form textarea:focus {
+  border-color: #22223b;
+  background: #e0e7ff;
+}
+
+#profile-form button {
+  background: #a3bffa;
+  color: #22223b;
+  font-weight: bold;
+  border-radius: 8px;
+  border: none;
+  padding: 0.8em;
+  font-size: 1em;
+  margin-top: 0.5em;
+  transition: background 0.2s, color 0.2s;
+  cursor: pointer;
+}
+
+#profile-form button:hover {
+  background: #22223b;
+  color: #fff;
+}

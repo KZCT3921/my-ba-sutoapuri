@@ -1,0 +1,72 @@
+body {
+  background: linear-gradient(120deg, #fefcbf 0%, #fbbf24 100%);
+}
+
+h1 {
+  color: #b7791f;
+  letter-spacing: 0.13em;
+  text-align: center;
+  margin-top: 2em;
+  margin-bottom: 1em;
+}
+
+#diary-form {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(251,191,36,0.13);
+  padding: 2em 1.5em;
+  margin: 2.5em auto 1em auto;
+  max-width: 370px;
+}
+
+#diary-content {
+  border: 1.5px solid #fbbf24;
+  background: #fffbe7;
+  color: #22223b;
+  font-size: 1em;
+  margin-bottom: 1em;
+  padding: 0.8em;
+  border-radius: 8px;
+  min-height: 80px;
+  transition: border 0.2s, background 0.2s;
+  resize: vertical;
+}
+
+#diary-content:focus {
+  border-color: #b7791f;
+  background: #fffde4;
+}
+
+#diary-form button {
+  background: #fbbf24;
+  color: #22223b;
+  font-weight: bold;
+  border-radius: 8px;
+  border: none;
+  padding: 0.8em;
+  font-size: 1em;
+  margin-top: 0.5em;
+  transition: background 0.2s, color 0.2s;
+  cursor: pointer;
+}
+
+#diary-form button:hover {
+  background: #b7791f;
+  color: #fff;
+}
+
+#diary-list {
+  max-width: 370px;
+  margin: 1.5em auto 0 auto;
+}
+
+.diary-entry {
+  background: #fffbe7;
+  border-left: 5px solid #fbbf24;
+  margin-bottom: 1em;
+  padding: 1em 1.2em;
+  border-radius: 8px;
+  font-size: 1em;
+  color: #22223b;
+  box-shadow: 0 2px 8px rgba(251,191,36,0.07);
+}

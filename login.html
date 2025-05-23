@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ログイン | Burst Limit Gym</title>
+  <link rel="stylesheet" href="login.css">
+</head>
+<body>
+  <h1>ログイン</h1>
+  <form id="login-form">
+    <input type="email" id="login-email" placeholder="メールアドレス" required>
+    <input type="password" id="login-password" placeholder="パスワード" required>
+    <button type="submit">ログイン</button>
+    <div id="login-message" style="margin-top:1em;color:#e53e3e;"></div>
+  </form>
+  <div style="text-align:center; margin-top:1.5em;">
+    <a href="register.html" id="register-link" style="color:#3b82f6; text-decoration:underline; cursor:pointer;">
+      新規登録はこちら
+    </a>
+    <br>
+    <a href="reset-password.html" id="forgot-link" style="color:#f59e42; text-decoration:underline; cursor:pointer; margin-top:0.7em; display:inline-block;">
+      パスワードを忘れた場合はこちら
+    </a>
+  </div>
+  <script src="login.js"></script>
+</body>
+</html>

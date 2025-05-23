@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>クーポン入力 | Burst Limit Gym</title>
+  <link rel="stylesheet" href="coupon.css">
+</head>
+<body>
+  <h1>クーポン入力</h1>
+  <form id="coupon-form">
+    <input type="text" id="coupon-code" placeholder="クーポンコードを入力" required>
+    <button type="submit">適用</button>
+    <div id="coupon-message"></div>
+  </form>
+  <section id="coupon-howto">
+    <h2>クーポンの使い方</h2>
+    <ol>
+      <li>配布されたクーポンコードをお持ちの場合、この画面の入力欄にコードを入力してください。</li>
+      <li>「適用」ボタンを押すと、クーポンの有効性が判定されます。</li>
+      <li>有効な場合は「適用されました」と表示されます。無効な場合はエラーメッセージが表示されます。</li>
+      <li>クーポンは1回のみ利用可能です。</li>
+      <li>クーポン内容や特典はキャンペーンごとに異なります。</li>
+    </ol>
+  </section>
+  <a href="settings.html" class="back-btn">設定に戻る</a>
+  <script>
+    // ここでクーポンコードを簡単に変更できます
+    const VALID_COUPON = "2025"; // ←ここを書き換えるだけ！
+
+    document.getElementById('coupon-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const code = document.getElementById('coupon-code').value.trim();
+      const message = document.getElementById('coupon-message');
+      if(code === VALID_COUPON) {
+        message.style.color = "#16a34a";
+        message.textContent = "クーポンが適用されました！";
+        // クーポンが適用されたとき
+        localStorage.setItem('couponUsed', 'true');
+        window.location.href = 'points.html';
+      } else {
+        message.style.color = "#e53e3e";
+        message.textContent = "無効なクーポンコードです。";
+      }
+    });
+  </script>
+</body>
+</html>

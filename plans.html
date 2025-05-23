@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>プラン値段 | Burst Limit Gym</title>
+  <link rel="stylesheet" href="settings.css">
+  <style>
+    .plan-list {
+      padding: 0;
+      margin: 2.5em auto 1em auto;
+      max-width: 370px;
+      list-style: none;
+    }
+    .plan-list li {
+      background: #fffbe7;
+      border-left: 5px solid #fbbf24;
+      margin-bottom: 1.2em;
+      padding: 1em 1.2em;
+      border-radius: 8px;
+      font-size: 1.1em;
+      color: #22223b;
+      box-shadow: 0 2px 8px rgba(251,191,36,0.07);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .plan-name {
+      font-weight: bold;
+      color: #b7791f;
+      font-size: 1.1em;
+    }
+    .plan-price {
+      font-weight: bold;
+      color: #3b82f6;
+      font-size: 1.1em;
+    }
+    .back-btn {
+      display: block;
+      margin: 2em auto 0 auto;
+      padding: 0.8em 2em;
+      background: #a3bffa;
+      color: #22223b;
+      font-weight: bold;
+      border: none;
+      border-radius: 8px;
+      font-size: 1em;
+      cursor: pointer;
+      text-align: center;
+      transition: background 0.2s, color 0.2s;
+      box-shadow: 0 2px 8px rgba(163,191,250,0.13);
+      text-decoration: none;
+      width: 200px;
+    }
+    .back-btn:hover {
+      background: #22223b;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <h1>プラン値段</h1>
+  <ul class="plan-list">
+    <li>
+      <span class="plan-name">会費(女)</span>
+      <span class="plan-price">¥7,700/月</span>
+    </li>
+    <li>
+      <span class="plan-name">会費(男)</span>
+      <span class="plan-price">¥8,800/月</span>
+    </li>
+    <li>
+      <span class="plan-name">ビジター</span>
+      <span class="plan-price">¥3,300/回</span>
+    </li>
+  </ul>
+  <a href="settings.html" class="back-btn">設定に戻る</a>
+</body>
+</html>
