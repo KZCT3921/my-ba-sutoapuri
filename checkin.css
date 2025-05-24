@@ -1,0 +1,55 @@
+/* 背景と全体設定 */
+body {
+  font-family: "Helvetica Neue", sans-serif;
+  background: linear-gradient(to right, #141e30, #243b55);
+  color: #ffffff;
+  margin: 0;
+  padding: 20px;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+/* タイトル */
+h1 {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-top: 30px;
+  color: #ffcc00;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+}
+
+/* QRリーダー枠 */
+#qr-reader {
+  border: 2px solid #ffcc00;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  background-color: #ffffff;
+  padding: 10px;
+}
+
+/* メッセージ表示部分 */
+#qr-message {
+  font-size: 1rem;
+  color: #00ffcc;
+  text-shadow: 1px 1px 2px #000;
+}
+
+/* 戻るボタン */
+.back-btn {
+  display: block;
+  text-align: center;
+  background-color: #ffcc00;
+  color: #000;
+  font-weight: bold;
+  padding: 12px 24px;
+  margin: 30px auto 0;
+  width: 200px;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.back-btn:hover {
+  background-color: #e6b800;
+  transform: scale(1.05);
+}
